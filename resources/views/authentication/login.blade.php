@@ -34,34 +34,47 @@
                             <img src="https://placehold.it/128x128" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         </div>
                         <!--Form-->
-                        <div class="login-form">
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input email-input" type="text" placeholder="jennadavis@gmail.com">
-                                    <div class="input-icon">
-                                        <i data-feather="user"></i>
+                        <form method="POST"  action="{{ route('post.login') }}">
+                            @csrf
+                            <div class="login-form">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input email-input" type="text" name="email" placeholder="jennadavis@gmail.com">
+                                        <div class="input-icon">
+                                            <i data-feather="user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input password-input" type="password" name="password" placeholder="●●●●●●●">
+                                        <div class="input-icon">
+                                            <i data-feather="lock"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="select">
+                                        <select name="login_as">
+                                        <option>Login As</option>
+                                        <option value="pet_owner">Pet Owner</option>
+                                        <option value="funder">Funder</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-solid primary-button raised is-rounded is-fullwidth">Login</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input password-input" type="password" placeholder="●●●●●●●">
-                                    <div class="input-icon">
-                                        <i data-feather="lock"></i>
-                                    </div>
+                            <div class="section forgot-password">
+                                <div class="has-text-centered">
+                                    <a href="#">Forgot password?</a>
                                 </div>
                             </div>
-                            <div class="field">
-                                <div class="control">
-                                    <button class="button is-solid primary-button raised is-rounded is-fullwidth">Login</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section forgot-password">
-                            <div class="has-text-centered">
-                                <a href="#">Forgot password?</a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

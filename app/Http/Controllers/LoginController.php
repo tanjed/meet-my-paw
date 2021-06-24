@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\Auth as FacadesAuth;
@@ -34,14 +32,16 @@ class LoginController extends Controller
             if (Auth::guard('pet_owner')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
 
                 return redirect()->to('/');
+            } else {
+                return back()->withInput($request->only('email', 'remember'))->with('failed', 'Login Error, Use Valid Credentials!');
             }
-            return back()->withInput($request->only('email', 'remember'));
         } else {
             if (Auth::guard('funder')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
 
                 return redirect()->to('/');
+            } else {
+                return back()->withInput($request->only('email', 'remember'))->with('failed', 'Login Error, Use Valid Credentials!');
             }
-            return back()->withInput($request->only('email', 'remember'));
         }
     }
 

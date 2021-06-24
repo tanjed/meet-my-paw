@@ -40,19 +40,20 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-        'pet_owner' => [
-            'driver' => 'session',
-            'provider' => 'pet_owners',
-        ],
-        'funder' => [
-            'driver' => 'session',
-            'provider' => 'funders',
-        ],
-
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
+        ],
+
+        'pet_owner' => [
+            'driver' => 'session',
+            'provider' => 'pet_owners',
+        ],
+
+        'funder' => [
+            'driver' => 'session',
+            'provider' => 'funders',
         ],
     ],
 

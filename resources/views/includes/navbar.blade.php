@@ -33,7 +33,8 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/bobby.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/bobby.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
@@ -53,7 +54,8 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/dan.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
@@ -73,11 +75,13 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/nelly.png" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/nelly.png" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
-                                        <span>You are now friends with <a href="#">Nelly Schwartz</a>. Check her <a href="#">profile</a>.</span>
+                                        <span>You are now friends with <a href="#">Nelly Schwartz</a>. Check her <a
+                                                href="#">profile</a>.</span>
                                     </div>
                                     <div class="media-right">
                                         <div class="added-icon">
@@ -89,7 +93,8 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/milly.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
@@ -109,11 +114,13 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
-                                        <span>You are now friends with <a href="#">Elise Walker</a>. Check her <a href="#">profile</a>.</span>
+                                        <span>You are now friends with <a href="#">Elise Walker</a>. Check her <a
+                                                href="#">profile</a>.</span>
                                     </div>
                                     <div class="media-right">
                                         <div class="added-icon">
@@ -125,11 +132,13 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
-                                        <span>You are now friends with <a href="#">Edward Mayers</a>. Check his <a href="#">profile</a>.</span>
+                                        <span>You are now friends with <a href="#">Edward Mayers</a>. Check his <a
+                                                href="#">profile</a>.</span>
                                     </div>
                                     <div class="media-right">
                                         <div class="added-icon">
@@ -163,7 +172,8 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/david.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
@@ -180,11 +190,13 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
-                                        <span><a href="#">Daniel Wellington</a> liked your <a href="#">profile.</a></span>
+                                        <span><a href="#">Daniel Wellington</a> liked your <a
+                                                href="#">profile.</a></span>
                                         <span class="time">43 minutes ago</span>
                                     </div>
                                     <div class="media-right">
@@ -197,11 +209,13 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/stella.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
-                                        <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your wall.</span>
+                                        <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your
+                                            wall.</span>
                                         <span class="time">Yesterday</span>
                                     </div>
                                     <div class="media-right">
@@ -214,11 +228,13 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                            <img src="https://via.placeholder.com/300x300"
+                                                data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
-                                        <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other people.</span>
+                                        <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2
+                                            other people.</span>
                                         <span class="time">2 days ago</span>
                                     </div>
                                     <div class="media-right">
@@ -251,7 +267,9 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/nelly.png" data-user-popover="9" alt="">
+                                            <img src="https://via.placeholder.com/150x150"
+                                                data-demo-src="assets/img/avatars/nelly.png" data-user-popover="9"
+                                                alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
@@ -269,7 +287,9 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5" alt="">
+                                            <img src="https://via.placeholder.com/150x150"
+                                                data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5"
+                                                alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
@@ -287,12 +307,14 @@
                                 <div class="media">
                                     <figure class="media-left">
                                         <p class="image">
-                                            <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
+                                            <img src="https://via.placeholder.com/150x150"
+                                                data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
                                         </p>
                                     </figure>
                                     <div class="media-content">
                                         <a href="#">Dan Walker</a>
-                                        <span>Hey there, would it be possible to borrow your bicycle, i really need...</span>
+                                        <span>Hey there, would it be possible to borrow your bicycle, i really
+                                            need...</span>
                                         <span class="time">Jun 03 2018</span>
                                     </div>
                                     <div class="media-right is-centered">
@@ -328,11 +350,11 @@
                     <div id="global-search" class="control">
                         <input id="tipue_drop_input" class="input is-rounded" type="text" placeholder="Search" required>
                         <span id="clear-search" class="reset-search">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                         <span class="search-icon">
-                                <i data-feather="search"></i>
-                            </span>
+                            <i data-feather="search"></i>
+                        </span>
 
                         <div id="tipue_drop_content" class="tipue-drop-content"></div>
                     </div>
@@ -367,34 +389,34 @@
                                 <li class="cart-row">
                                     <img src="assets/img/products/2.svg" alt="" />
                                     <span class="item-meta">
-                                            <span class="item-name">Cool Shirt</span>
+                                        <span class="item-name">Cool Shirt</span>
                                         <span class="meta-info">
-                                                <span class="item-price">$29.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
+                                            <span class="item-price">$29.00</span>
+                                            <span class="item-quantity">Qty: 01</span>
                                         </span>
-                                        </span>
+                                    </span>
                                 </li>
 
                                 <li class="cart-row">
                                     <img src="assets/img/products/3.svg" alt="" />
                                     <span class="item-meta">
-                                            <span class="item-name">Military Short</span>
+                                        <span class="item-name">Military Short</span>
                                         <span class="meta-info">
-                                                <span class="item-price">$39.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
+                                            <span class="item-price">$39.00</span>
+                                            <span class="item-quantity">Qty: 01</span>
                                         </span>
-                                        </span>
+                                    </span>
                                 </li>
 
                                 <li class="cart-row">
                                     <img src="assets/img/products/4.svg" alt="" />
                                     <span class="item-meta">
-                                            <span class="item-name">Cool Backpack</span>
+                                        <span class="item-name">Cool Backpack</span>
                                         <span class="meta-info">
-                                                <span class="item-price">$125.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
+                                            <span class="item-price">$125.00</span>
+                                            <span class="item-quantity">Qty: 01</span>
                                         </span>
-                                        </span>
+                                    </span>
                                 </li>
                             </ul>
 
@@ -404,127 +426,94 @@
                 </div>
                 <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
                     <div class="user-image">
-                        <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                        <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png"
+                            alt="">
                         <span class="indicator"></span>
                     </div>
 
                     <div class="nav-drop is-account-dropdown">
                         <div class="inner">
                             <div class="nav-drop-header">
-                                <span class="username">Jenna Davis</span>
+                                {{-- <span class="username">Jenna Davis</span> --}}
                                 <label class="theme-toggle">
                                     <input type="checkbox">
                                     <span class="toggler">
-                                            <span class="dark">
-                                                <i data-feather="moon"></i>
-                                            </span>
-                                        <span class="light">
-                                                <i data-feather="sun"></i>
-                                            </span>
+                                        <span class="dark">
+                                            <i data-feather="moon"></i>
                                         </span>
+                                        <span class="light">
+                                            <i data-feather="sun"></i>
+                                        </span>
+                                    </span>
                                 </label>
                             </div>
-                            <div class="nav-drop-body account-items">
-                                <a id="profile-link" href="profile-main.html" class="account-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <div class="image">
-                                                <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                            @if (Auth::guard('pet_owner')->check())
+                                <div class="nav-drop-body account-items">
+                                    <a id="profile-link" href="/profile" class="account-item">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="image">
+                                                    <img src="https://via.placeholder.com/400x400"
+                                                        data-demo-src="/assets/img/demo/groups/1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>{{ Auth::guard('pet_owner')->user()->first_name }}</h3>
+                                                <small>Main account</small>
+                                            </div>
+                                            <div class="media-right">
+                                                <i data-feather="check"></i>
                                             </div>
                                         </div>
-                                        <div class="media-content">
-                                            <h3>Jenna Davis</h3>
-                                            <small>Main account</small>
-                                        </div>
-                                        <div class="media-right">
-                                            <i data-feather="check"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <hr class="account-divider">
-                                <a href="pages-main.html" class="account-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <div class="image">
-                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/hanzo.svg" alt="">
+                                    </a>
+                                    <hr class="account-divider">
+
+                                    <a class="account-item">
+                                        <div class="media">
+                                            <div class="icon-wrap">
+                                                <i data-feather="power"></i>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Log out</h3>
+                                                <small>Log out from your account.</small>
                                             </div>
                                         </div>
-                                        <div class="media-content">
-                                            <h3>Css Ninja</h3>
-                                            <small>Company page</small>
-                                        </div>
-                                        <div class="media-right is-hidden">
-                                            <i data-feather="check"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="pages-main.html" class="account-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <div class="image">
-                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/icons/logos/fastpizza.svg" alt="">
+                                    </a>
+                                </div>
+                            @elseif (Auth::guard('funder')->check())
+                                <div class="nav-drop-body account-items">
+                                    <a id="profile-link" href="/profile" class="account-item">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="image">
+                                                    <img src="https://via.placeholder.com/400x400"
+                                                        data-demo-src="/assets/img/demo/groups/1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>{{ Auth::guard('funder')->user()->first_name }}</h3>
+                                                <small>Main account</small>
+                                            </div>
+                                            <div class="media-right">
+                                                <i data-feather="check"></i>
                                             </div>
                                         </div>
-                                        <div class="media-content">
-                                            <h3>Fast Pizza</h3>
-                                            <small>Company page</small>
-                                        </div>
-                                        <div class="media-right is-hidden">
-                                            <i data-feather="check"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="pages-main.html" class="account-item">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <div class="image">
-                                                <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/icons/logos/slicer.svg" alt="">
+                                    </a>
+                                    <hr class="account-divider">
+
+                                    <a class="account-item">
+                                        <div class="media">
+                                            <div class="icon-wrap">
+                                                <i data-feather="power"></i>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Log out</h3>
+                                                <small>Log out from your account.</small>
                                             </div>
                                         </div>
-                                        <div class="media-content">
-                                            <h3>Slicer</h3>
-                                            <small>Company page</small>
-                                        </div>
-                                        <div class="media-right is-hidden">
-                                            <i data-feather="check"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <hr class="account-divider">
-                                <a href="options-settings.html" class="account-item">
-                                    <div class="media">
-                                        <div class="icon-wrap">
-                                            <i data-feather="settings"></i>
-                                        </div>
-                                        <div class="media-content">
-                                            <h3>Settings</h3>
-                                            <small>Access widget settings.</small>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="account-item">
-                                    <div class="media">
-                                        <div class="icon-wrap">
-                                            <i data-feather="life-buoy"></i>
-                                        </div>
-                                        <div class="media-content">
-                                            <h3>Help</h3>
-                                            <small>Contact our support.</small>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="account-item">
-                                    <div class="media">
-                                        <div class="icon-wrap">
-                                            <i data-feather="power"></i>
-                                        </div>
-                                        <div class="media-content">
-                                            <h3>Log out</h3>
-                                            <small>Log out from your account.</small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                                    </a>
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -560,7 +549,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/bobby.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/bobby.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
@@ -580,7 +570,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/dan.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
@@ -600,11 +591,13 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/nelly.png" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/nelly.png" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
-                                <span>You are now friends with <a href="#">Nelly Schwartz</a>. Check her <a href="#">profile</a>.</span>
+                                <span>You are now friends with <a href="#">Nelly Schwartz</a>. Check her <a
+                                        href="#">profile</a>.</span>
                             </div>
                             <div class="media-right">
                                 <div class="added-icon">
@@ -616,7 +609,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/milly.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/milly.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
@@ -636,11 +630,13 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
-                                <span>You are now friends with <a href="#">Elise Walker</a>. Check her <a href="#">profile</a>.</span>
+                                <span>You are now friends with <a href="#">Elise Walker</a>. Check her <a
+                                        href="#">profile</a>.</span>
                             </div>
                             <div class="media-right">
                                 <div class="added-icon">
@@ -652,11 +648,13 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/edward.jpeg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/edward.jpeg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
-                                <span>You are now friends with <a href="#">Edward Mayers</a>. Check his <a href="#">profile</a>.</span>
+                                <span>You are now friends with <a href="#">Edward Mayers</a>. Check his <a
+                                        href="#">profile</a>.</span>
                             </div>
                             <div class="media-right">
                                 <div class="added-icon">
@@ -690,7 +688,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/david.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/david.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
@@ -707,7 +706,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/daniel.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/daniel.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
@@ -724,11 +724,13 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/stella.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
-                                <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your wall.</span>
+                                <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your
+                                    wall.</span>
                                 <span class="time">Yesterday</span>
                             </div>
                             <div class="media-right">
@@ -741,11 +743,13 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
+                                    <img src="https://via.placeholder.com/300x300"
+                                        data-demo-src="assets/img/avatars/elise.jpg" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
-                                <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other people.</span>
+                                <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other
+                                    people.</span>
                                 <span class="time">2 days ago</span>
                             </div>
                             <div class="media-right">
@@ -778,7 +782,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/nelly.png" data-user-popover="9" alt="">
+                                    <img src="https://via.placeholder.com/150x150"
+                                        data-demo-src="assets/img/avatars/nelly.png" data-user-popover="9" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
@@ -796,7 +801,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5" alt="">
+                                    <img src="https://via.placeholder.com/150x150"
+                                        data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">
@@ -814,7 +820,8 @@
                         <div class="media">
                             <figure class="media-left">
                                 <p class="image">
-                                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
+                                    <img src="https://via.placeholder.com/150x150"
+                                        data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
                                 </p>
                             </figure>
                             <div class="media-content">

@@ -44,7 +44,9 @@
                 <h2 id="step-title-3" class="step-title">Upload a profile picture.</h2>
                 <h2 id="step-title-4" class="step-title">Secure your account.</h2>
                 <h2 id="step-title-5" class="step-title">You're all set. Ready?</h2>
+                @include('includes.message')
             </div>
+
             <form action="{{route('post.register')}}" method="POST">
                 @csrf
                 <input type="hidden" id="type" name="type">
@@ -144,7 +146,7 @@
                         <div class="field">
                             <label>Repeat Password</label>
                             <div class="control">
-                                <input type="password" class="input" placeholder="Repeat your password" name="repeat_password">
+                                <input type="password" class="input" placeholder="Repeat your password" name="password_confirmation">
                             </div>
                         </div>
 {{--                        <div class="field">--}}
@@ -166,7 +168,6 @@
                         <img class="success-image" src="assets/img/illustrations/signup/mailbox.svg" alt="">
                         <div class="success-text">
                             <h3>Congratz, you successfully created your account.</h3>
-                            <p> We just sent you a confirmation email. PLease confirm your account within 24 hours.</p>
                             <button type="submit" id="signup-finish" class="button is-fullwidth">Let Me In</button>
                         </div>
                     </div>

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{\Illuminate\Support\Facades\URL::to('assets/css/app.css')}}">
-    <link rel="stylesheet" href="{{\Illuminate\Support\Facades\URL::to('assets/css/core.css')}}">
+    <link rel="stylesheet" href="{{ \Illuminate\Support\Facades\URL::to('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ \Illuminate\Support\Facades\URL::to('assets/css/core.css') }}">
 
 </head>
