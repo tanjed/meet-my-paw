@@ -28,11 +28,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('profile.profile');
 // })->name('show.profile');
 
-Route::post('/register-action','RegisterController@createAuth')->name('show.login');
-Route::post('/login-action','LoginController@authLogin');
+Route::post('/register','RegisterController@createAuth')->name('post.register');
+Route::post('/login','LoginController@authLogin')->name('post.login');
 Route::get('/logout','LoginController@logout');
 Route::get('/login','LoginController@loginView');
-Route::get('/registration','RegisterController@registerView')->name('show.register');
+Route::get('/register','RegisterController@registerView')->name('show.register');
 //page routes
 Route::get('/','HomeController@index');
 Route::get('/home','HomeController@index');

@@ -45,8 +45,9 @@
                 <h2 id="step-title-4" class="step-title">Secure your account.</h2>
                 <h2 id="step-title-5" class="step-title">You're all set. Ready?</h2>
             </div>
-            <form action="/register-action" method="POST">
-
+            <form action="{{route('post.register')}}" method="POST">
+                @csrf
+                <input type="hidden" id="type" name="type">
                 <div id="signup-panel-1" class="process-panel-wrap is-active">
                     <div class="columns mt-6">
 
@@ -59,7 +60,7 @@
                                 </div>
                                 <h3>Pet Owner</h3>
                                 <p>Create a Pet Owner account to be able to do some awesome things.</p>
-                                <a class="button is-fullwidth process-button" data-step="step-dot-2">
+                                <a class="button is-fullwidth process-button type-select" data-step="step-dot-2" data-value="pet_owner">
                                     Continue
                                 </a>
                             </div>
@@ -74,7 +75,7 @@
 
                                 <h3>Funder</h3>
                                 <p>Create a Funder account to be able to do some awesome things.</p>
-                                <a class="button is-fullwidth process-button" data-step="step-dot-2">
+                                <a class="button is-fullwidth process-button type-select" data-step="step-dot-2" data-value="funder">
                                     Continue
                                 </a>
                             </div>
@@ -87,19 +88,19 @@
                         <div class="field">
                             <label>First Name</label>
                             <div class="control">
-                                <input type="text" class="input" placeholder="Enter your first name">
+                                <input type="text" class="input" placeholder="Enter your first name" name="first_name">
                             </div>
                         </div>
                         <div class="field">
                             <label>Last Name</label>
                             <div class="control">
-                                <input type="text" class="input" placeholder="Enter your last name">
+                                <input type="text" class="input" placeholder="Enter your last name" name="last_name">
                             </div>
                         </div>
                         <div class="field">
                             <label>Email</label>
                             <div class="control">
-                                <input type="text" class="input" placeholder="Enter your email address">
+                                <input type="text" class="input" placeholder="Enter your email address" name="email">
                             </div>
                         </div>
                     </div>
@@ -118,7 +119,7 @@
                                     <i data-feather="plus"></i>
                                 </a>
                                 <img id="upload-preview" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/avatar-w.png" alt="">
-                                <form id="profile-pic-dz" class="dropzone is-hidden" action="https://friendkit.cssninja.io/"></form>
+{{--                                <form id="profile-pic-dz" class="dropzone is-hidden" action="https://friendkit.cssninja.io/"></form>--}}
                             </div>
                             <div class="limitation">
                                 <small>Only images with a size lower than 3MB are allowed.</small>
@@ -137,21 +138,21 @@
                         <div class="field">
                             <label>Password</label>
                             <div class="control">
-                                <input type="password" class="input" placeholder="Choose a password">
+                                <input type="password" class="input" placeholder="Choose a password" name="password">
                             </div>
                         </div>
                         <div class="field">
                             <label>Repeat Password</label>
                             <div class="control">
-                                <input type="password" class="input" placeholder="Repeat your password">
+                                <input type="password" class="input" placeholder="Repeat your password" name="repeat_password">
                             </div>
                         </div>
-                        <div class="field">
-                            <label>Phone Number</label>
-                            <div class="control">
-                                <input type="text" class="input" placeholder="Enter your phone number">
-                            </div>
-                        </div>
+{{--                        <div class="field">--}}
+{{--                            <label>Phone Number</label>--}}
+{{--                            <div class="control">--}}
+{{--                                <input type="text" class="input" placeholder="Enter your phone number">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
 
                     <div class="buttons">
@@ -166,7 +167,7 @@
                         <div class="success-text">
                             <h3>Congratz, you successfully created your account.</h3>
                             <p> We just sent you a confirmation email. PLease confirm your account within 24 hours.</p>
-                            <a id="signup-finish" class="button is-fullwidth">Let Me In</a>
+                            <button type="submit" id="signup-finish" class="button is-fullwidth">Let Me In</button>
                         </div>
                     </div>
                 </div>
@@ -198,4 +199,10 @@
         </div>
     </div>
 </div>
+    <script>
+        $('.type-select').click(function (){
+            console.log($(this).data('value'))
+            $('#type').val($(this).data('value'))
+        });
+    </script>
 @endsection

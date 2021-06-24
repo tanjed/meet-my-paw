@@ -21,7 +21,7 @@ class RegisterController extends Controller
     protected function createAuth(Request $request)
     {
 
-
+        dd($request->all());
         // return $request->all();
         $this->validate($request, [
             'email'   => 'required|email',
