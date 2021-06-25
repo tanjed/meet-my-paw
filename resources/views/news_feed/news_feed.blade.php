@@ -1,4 +1,4 @@
-@extends('layouts.master',['navbar' => true])
+@extends('layouts.master')
 @section('content')
     <div class="view-wrapper">
 

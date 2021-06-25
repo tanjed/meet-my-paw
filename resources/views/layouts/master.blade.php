@@ -9,12 +9,14 @@
 @include('includes.header')
 
 <body class="is-white">
-    @if ($navbar == true)
-        @include('includes.navbar')
-    @endif
-    <div style="margin-top: 100px">
+    @if (isset($navbar) && $navbar == false)
         @yield('content')
-    </div>
+    @else
+        @include('includes.navbar')
+        <div style="margin-top: 100px">
+            @yield('content')
+        </div>
+    @endif
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="{{ \Illuminate\Support\Facades\URL::to('assets/js/app.js') }}"></script>

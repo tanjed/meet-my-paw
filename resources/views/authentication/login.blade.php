@@ -1,5 +1,13 @@
 @extends('layouts.master',['navbar' => false])
 @section('content')
+    <style>
+        .active{
+            background: lightgrey !important;
+        }
+        .nav-link{
+            border-color: #dee2e6 !important;
+        }
+    </style>
     <!-- Main Wrapper -->
     <div class="login-wrapper columns is-gapless">
         <!--Left Side (Desktop Only)-->
@@ -36,6 +44,16 @@
                         <!--Form-->
                         <form method="POST"  action="{{ route('post.login') }}">
                             @csrf
+                            <center><label>Login As:</label></center>
+                            <ul class="nav nav-tabs justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" data-value="pet_owner">Pet Owner</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-value="fonder">Fonder</a>
+                                </li>
+                            </ul>
+                            <br>
                             <div class="login-form">
                                 <div class="field">
                                     <div class="control">
@@ -54,13 +72,7 @@
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <div class="select">
-                                        <select name="login_as">
-                                        <option>Login As</option>
-                                        <option value="pet_owner">Pet Owner</option>
-                                        <option value="funder">Funder</option>
-                                        </select>
-                                    </div>
+                                    <input type="hidden" value="pet_owner" name="login_as">
                                 </div>
 
                                 <div class="field">
@@ -81,5 +93,13 @@
         </div>
     </div>
 </div>
+    <script>
+        $('.nav-link').click(function () {
+            $('.nav-link').toggleClass('active')
+            $("input[name='login_as']").val($(this).data('value'))
+        });
+        (function (){
+        })();
+    </script>
 
 @endsection
