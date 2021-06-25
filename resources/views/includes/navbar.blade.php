@@ -11,7 +11,6 @@
              $user =  Auth::guard('funder')->user();
             }
         }
-
 @endphp
 
 
@@ -439,12 +438,12 @@
                             </ul>
 
                             <a href="#" class="button primary-button is-raised">Checkout</a>
-                        </div>
+                        </div>$user
                     </div>
                 </div>
                 <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
                     <div class="user-image">
-                        @if($user->profile_pic)
+                        @if(isset($user->profile_pic))
                         <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}"
                             alt="">
                         <span class="indicator"></span>
@@ -478,7 +477,7 @@
 
                                             <div class="media-left">
                                                 <div class="image">
-                                                    @if($user->profile_pic)
+                                                    @if(isset($user->profile_pic))
                                                     <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}"
                                                         alt="">
                                                     <span class="indicator"></span>
@@ -566,6 +565,20 @@
                                             </div>
                                         </div>
                                     </a>
+                                </div>
+                            @else
+                                <div class="nav-drop-body account-items">
+                                <a id="profile-link" href="{{route('show.login')}}" class="account-item">
+                                    <div class="media">
+                                        <div class="icon-wrap">
+                                            <i data-feather="check"></i>
+                                        </div>
+                                        <div class="media-content">
+                                            <h3>Login</h3>
+                                            <small>Sign in to profile.</small>
+                                        </div>
+                                    </div>
+                                </a>
                                 </div>
                             @endif
                         </div>
