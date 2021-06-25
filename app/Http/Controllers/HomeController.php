@@ -81,7 +81,7 @@ class HomeController extends Controller
                     $image2 = $request->file('cover_pic');
                     $image_name2 = time() . '.' . $image2->getClientOriginalExtension();
                     $destinationPath = public_path('/images/user/cover_pic');
-                    $image->move($destinationPath, $image_name2);
+                    $image2->move($destinationPath, $image_name2);
                     $user_data->cover_pic = $image_name2;
                 }
 
@@ -152,7 +152,7 @@ class HomeController extends Controller
                     $image2 = $request->file('cover_pic');
                     $image_name2 = time() . '.' . $image2->getClientOriginalExtension();
                     $destinationPath = public_path('/images/user/cover_pic');
-                    $image->move($destinationPath, $image_name2);
+                    $image2->move($destinationPath, $image_name2);
                     $user_data->cover_pic = $image_name2;
                 }
                 $user_data->save();

@@ -22,9 +22,9 @@
                 <div id="step-dot-2" class="dot is-second" data-step="25">
                     <i data-feather="user"></i>
                 </div>
-                <div id="step-dot-3" class="dot is-third" data-step="50">
+                {{-- <div id="step-dot-3" class="dot is-third" data-step="50">
                     <i data-feather="image"></i>
-                </div>
+                </div> --}}
                 <div id="step-dot-4" class="dot is-fourth" data-step="75">
                     <i data-feather="lock"></i>
                 </div>
@@ -41,7 +41,7 @@
             <div class="process-title">
                 <h2 id="step-title-1" class="step-title is-active">Welcome, select an account type.</h2>
                 <h2 id="step-title-2" class="step-title">Tell us more about you.</h2>
-                <h2 id="step-title-3" class="step-title">Upload a profile picture.</h2>
+                {{-- <h2 id="step-title-3" class="step-title">Upload a profile picture.</h2> --}}
                 <h2 id="step-title-4" class="step-title">Secure your account.</h2>
                 <h2 id="step-title-5" class="step-title">You're all set. Ready?</h2>
                 @include('includes.message')
@@ -109,11 +109,11 @@
 
                     <div class="buttons">
                         <a class="button process-button" data-step="step-dot-1">Back</a>
-                        <a class="button process-button is-next" data-step="step-dot-3">Next</a>
+                        <a class="button process-button is-next" data-step="step-dot-4">Next</a>
                     </div>
                 </div>
 
-                <div id="signup-panel-3" class="process-panel-wrap is-narrow">
+                {{-- <div id="signup-panel-3" class="process-panel-wrap is-narrow">
                     <div class="form-panel">
                         <div class="photo-upload">
                             <div class="preview">
@@ -121,7 +121,7 @@
                                     <i data-feather="plus"></i>
                                 </a>
                                 <img id="upload-preview" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/avatar-w.png" alt="">
-{{--                                <form id="profile-pic-dz" class="dropzone is-hidden" action="https://friendkit.cssninja.io/"></form>--}}
+                               <form id="profile-pic-dz" class="dropzone is-hidden" action="https://friendkit.cssninja.io/"></form>
                             </div>
                             <div class="limitation">
                                 <small>Only images with a size lower than 3MB are allowed.</small>
@@ -133,7 +133,7 @@
                         <a class="button process-button" data-step="step-dot-2">Back</a>
                         <a class="button process-button is-next" data-step="step-dot-4">Next</a>
                     </div>
-                </div>
+                </div> --}}
 
                 <div id="signup-panel-4" class="process-panel-wrap is-narrow">
                     <div class="form-panel">

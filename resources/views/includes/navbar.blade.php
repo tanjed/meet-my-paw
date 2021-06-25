@@ -511,7 +511,7 @@
                                     </a>
                                     <hr class="account-divider">
 
-                                    <a class="account-item">
+                                    <a class="account-item" id="profile-link" href="/logout">
                                         <div class="media">
                                             <div class="icon-wrap">
                                                 <i data-feather="power"></i>
@@ -555,8 +555,8 @@
                                     </a>
                                     <hr class="account-divider">
 
-                                    <a class="account-item">
-                                        <div class="media">
+                                    <a class="account-item" id="profile-link" href="/logout">
+                                        <div class="media" >
                                             <div class="icon-wrap">
                                                 <i data-feather="power"></i>
                                             </div>

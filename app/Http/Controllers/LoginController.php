@@ -53,6 +53,6 @@ class LoginController extends Controller
             Auth::guard('funder')->logout();
         }
 
-        return redirect()->back();
+        return redirect()->to('/login');
     }
 }

@@ -41,6 +41,7 @@
                             </div>
                             <img src="https://placehold.it/128x128" data-demo-src="assets/img/avatars/jenna.png" alt="">
                         </div>
+                        @include('includes.message')
                         <!--Form-->
                         <form method="POST"  action="{{ route('post.login') }}">
                             @csrf
@@ -81,9 +82,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section forgot-password">
+                            {{-- <div class="section forgot-password">
                                 <div class="has-text-centered">
                                     <a href="#">Forgot password?</a>
+                                </div>
+                            </div> --}}
+                            <div class="section forgot-password">
+                                <div class="has-text-centered">
+                                    <a href="/register">Sign Up</a>
                                 </div>
                             </div>
                         </form>
