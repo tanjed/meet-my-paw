@@ -6,6 +6,7 @@ use App\Funder;
 use App\PetOwner;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Webpatser\Uuid\Uuid;
 use Illuminate\Support\Facades\Validator;
@@ -46,10 +47,11 @@ class RegisterController extends Controller
                     $pet_owner->email = $request['email'];
                     $pet_owner->password = Hash::make($request['password']);
                     $pet_owner->save();
-                    return redirect()->to('/login');
+                    Auth::guard('pet_owner')->login($pet_owner);
+                    return redirect()->to('/');
                 }
             } else {
-                $user = PetOwner::where('email', $request->email)->first();
+                $user = Funder::where('email', $request->email)->first();
                 if ($user) {
                     return back()->with('failed', "Email is already taken. ");
                 } else {
@@ -64,7 +66,8 @@ class RegisterController extends Controller
                     $funder->email = $request['email'];
                     $funder->password = Hash::make($request['password']);
                     $funder->save();
-                    return redirect()->to('/login');
+                    Auth::guard('funder')->login($funder);
+                    return redirect()->to('/');
                 }
             }
         }
