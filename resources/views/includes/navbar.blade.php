@@ -1,3 +1,21 @@
+
+@php
+        if (Auth::guard('pet_owner')->check()) {
+            $user = App\UserProfile::where('user_id',Auth::guard('pet_owner')->user()->id)->first();
+            if(!$user){
+                $user =  Auth::guard('pet_owner')->user();
+            }
+        } elseif (Auth::guard('funder')->check()) {
+            $user = App\UserProfile::where('user_id',Auth::guard('funder')->user()->id)->first();
+            if(!$user){
+             $user =  Auth::guard('funder')->user();
+            }
+        }
+
+@endphp
+
+
+
 <div class="pageloader"></div>
 <div class="infraloader is-active"></div>
 <div class="app-overlay"></div>
@@ -5,7 +23,7 @@
 <div id="main-navbar" class="navbar navbar-v1 is-inline-flex is-transparent no-shadow is-hidden-mobile" style="padding-bottom: 70px">
     <div class="container is-fluid">
         <div class="navbar-brand">
-            <a href="index.html" class="navbar-item">
+            <a href="/" class="navbar-item">
                 <img class="logo light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">
                 <img class="logo dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">
             </a>
@@ -426,9 +444,15 @@
                 </div>
                 <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
                     <div class="user-image">
-                        <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png"
+                        @if($user->profile_pic)
+                        <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}"
                             alt="">
                         <span class="indicator"></span>
+                        @else
+                        <img src="https://via.placeholder.com/400x400" data-demo-src="/assets/img/demo/groups/1.jpg"
+                            alt="">
+                        <span class="indicator"></span>
+                        @endif
                     </div>
 
                     <div class="nav-drop is-account-dropdown">
@@ -451,10 +475,18 @@
                                 <div class="nav-drop-body account-items">
                                     <a id="profile-link" href="/profile" class="account-item">
                                         <div class="media">
+
                                             <div class="media-left">
                                                 <div class="image">
-                                                    <img src="https://via.placeholder.com/400x400"
-                                                        data-demo-src="/assets/img/demo/groups/1.jpg" alt="">
+                                                    @if($user->profile_pic)
+                                                    <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}"
+                                                        alt="">
+                                                    <span class="indicator"></span>
+                                                    @else
+                                                    <img src="https://via.placeholder.com/400x400" data-demo-src="/assets/img/demo/groups/1.jpg"
+                                                        alt="">
+                                                    <span class="indicator"></span>
+                                                    @endif
                                                 </div>
                                             </div>
                                             <div class="media-content">
@@ -463,6 +495,17 @@
                                             </div>
                                             <div class="media-right">
                                                 <i data-feather="check"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a id="profile-link" href="/edit-profile" class="account-item">
+                                        <div class="media">
+                                            <div class="icon-wrap">
+                                                <i data-feather="check"></i>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Edit Account</h3>
+                                                <small>Update your profile.</small>
                                             </div>
                                         </div>
                                     </a>
@@ -499,6 +542,17 @@
                                             </div>
                                         </div>
                                     </a>
+                                    <a id="profile-link" href="/edit-profile" class="account-item">
+                                        <div class="media">
+                                            <div class="icon-wrap">
+                                                <i data-feather="check"></i>
+                                            </div>
+                                            <div class="media-content">
+                                                <h3>Edit Account</h3>
+                                                <small>Update your profile.</small>
+                                            </div>
+                                        </div>
+                                    </a>
                                     <hr class="account-divider">
 
                                     <a class="account-item">
@@ -525,7 +579,7 @@
 <nav class="navbar mobile-navbar is-hidden-desktop" aria-label="main navigation">
     <!-- Brand -->
     <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
+        <a class="navbar-item" href="/">
             <img class="light-image" src="assets/img/logo/friendkit-bold.svg" alt="">
             <img class="dark-image" src="assets/img/logo/friendkit-white.svg" alt="">
         </a>

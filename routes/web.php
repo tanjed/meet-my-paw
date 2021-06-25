@@ -37,3 +37,5 @@ Route::get('/register','RegisterController@registerView')->name('show.register')
 Route::get('/','HomeController@index');
 Route::get('/home','HomeController@index');
 Route::get('/profile','HomeController@profile')->name('show.profile');
+Route::get('/edit-profile','HomeController@editProfile')->name('show.profile');
+Route::post('/update-profile/{id}','HomeController@updateProfile')->name('update.profile');

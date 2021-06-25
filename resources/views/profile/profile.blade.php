@@ -13,30 +13,31 @@
 
             <!--Cover image-->
             <div class="profile-cover">
+                @if ($user->cover_pic)
                 <img class="cover-image" src="https://via.placeholder.com/1600x460"
-                    data-demo-src="/assets/img/demo/bg/4.png" alt="">
+                data-demo-src="/images/user/cover_pic/{{ $user->cover_pic }}" alt="">
+                @endif
+
             </div>
 
             <!--General Info-->
             <div class="profile-info">
                 <div class="left">
                     <div class="profile-avatar">
+                        @if ($user->profile_pic)
                         <img id="user-avatar-minimal" src="https://via.placeholder.com/300x300"
-                            data-demo-src="/assets/img/avatars/jenna.png" alt="">
-                        <button class="button is-solid secondary-button raised modal-trigger"
-                            data-modal="change-profile-pic-modal">
-                            <i data-feather="plus"></i>
-                        </button>
+                            data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}" alt="">
+                        @endif
                     </div>
-                    <a class="button is-fullwidth modal-trigger" data-modal="change-cover-modal">
+                    {{-- <a class="button is-fullwidth modal-trigger" data-modal="change-cover-modal">
                         <i data-feather="camera"></i>
                         <span>Update Cover</span>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <div class="right">
                     <div class="head">
-                        <h2>Jenna Davis</h2>
+                        <h2>{{ $user->first_name }} {{ $user->last_name }}</h2>
                         <div class="actions">
                             <a class="button is-solid secondary-button raised">Follow</a>
                         </div>
@@ -47,9 +48,7 @@
                         <span>104 Following</span>
                     </div>
                     <div class="bio">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam enim adesse poterit. Quis est tam
-                            dissimile homini. At ille pellit, qui permulcet sensum voluptate. Vide, quaeso, rectumne sit.
-                            Primum quid tu dicis breve?</p>
+                        <p>{{$user->bio}}</p>
                     </div>
                 </div>
             </div>
