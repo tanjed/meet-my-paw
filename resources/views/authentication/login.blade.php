@@ -16,7 +16,7 @@
                 <div class="hero-body">
                     <div class="container">
                         <div class="left-caption">
-                            <h2>Join an Exciting Social Experience.</h2>
+                            <h2>Meet My Paws</h2>
                         </div>
                     </div>
                 </div>

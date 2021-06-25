@@ -5,7 +5,7 @@
     <div class="pageloader"></div>
     <div class="infraloader is-active"></div>
     <div class="app-overlay"></div>
-    <div id="shadow-dom" class="view-wrap">
+    <div id="shadow-dom" class="view-wrap p-5">
         <div class="row">
 
         </div>

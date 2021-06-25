@@ -13,7 +13,7 @@
         @yield('content')
     @else
         @include('includes.navbar')
-        <div style="margin-top: 100px">
+        <div>
             @yield('content')
         </div>
     @endif
