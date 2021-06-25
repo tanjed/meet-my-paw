@@ -12,7 +12,9 @@
     @if ($navbar == true)
         @include('includes.navbar')
     @endif
-    @yield('content')
+    <div style="margin-top: 100px">
+        @yield('content')
+    </div>
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="{{ \Illuminate\Support\Facades\URL::to('assets/js/app.js') }}"></script>

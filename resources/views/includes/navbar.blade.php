@@ -2,7 +2,7 @@
 <div class="infraloader is-active"></div>
 <div class="app-overlay"></div>
 
-<div id="main-navbar" class="navbar navbar-v1 is-inline-flex is-transparent no-shadow is-hidden-mobile">
+<div id="main-navbar" class="navbar navbar-v1 is-inline-flex is-transparent no-shadow is-hidden-mobile" style="padding-bottom: 70px">
     <div class="container is-fluid">
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
