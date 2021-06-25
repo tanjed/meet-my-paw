@@ -1,22 +1,6 @@
 
-@php
-        if (Auth::guard('pet_owner')->check()) {
-            $user = App\UserProfile::where('user_id',Auth::guard('pet_owner')->user()->id)->first();
-            if(!$user){
-                $user =  Auth::guard('pet_owner')->user();
-            }
-        } elseif (Auth::guard('funder')->check()) {
-            $user = App\UserProfile::where('user_id',Auth::guard('funder')->user()->id)->first();
-            if(!$user){
-             $user =  Auth::guard('funder')->user();
-            }
-        }
-@endphp
-
-
-
-<div class="pageloader"></div>
-<div class="infraloader is-active"></div>
+{{--<div class="pageloader"></div>--}}
+{{--<div class="infraloader is-active"></div>--}}
 <div class="app-overlay"></div>
 
 <div id="main-navbar" class="navbar navbar-v1 is-inline-flex is-transparent no-shadow is-hidden-mobile" style="padding-bottom: 70px">
@@ -443,8 +427,8 @@
                 </div>
                 <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
                     <div class="user-image">
-                        @if(isset($user->profile_pic))
-                        <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}"
+                        @if(isset(\Auth::user()->profile->profile_pic))
+                        <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ \Auth::user()->profile->profile_pic }}"
                             alt="">
                         <span class="indicator"></span>
                         @else
@@ -457,7 +441,7 @@
                     <div class="nav-drop is-account-dropdown">
                         <div class="inner">
                             <div class="nav-drop-header">
-                                {{-- <span class="username">Jenna Davis</span> --}}
+                                 <span class="username">Jenna Davis</span>
                                 <label class="theme-toggle">
                                     <input type="checkbox">
                                     <span class="toggler">
@@ -470,15 +454,15 @@
                                     </span>
                                 </label>
                             </div>
-                            @if (Auth::guard('pet_owner')->check())
+                            @if (\Auth::check())
                                 <div class="nav-drop-body account-items">
-                                    <a id="profile-link" href="/profile" class="account-item">
+                                    <a id="profile-link" href="{{route('show.profile',['user_name' => Auth::user()->user_name])}}" class="account-item">
                                         <div class="media">
 
                                             <div class="media-left">
                                                 <div class="image">
-                                                    @if(isset($user->profile_pic))
-                                                    <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}"
+                                                    @if(isset(\Auth::user()->profile->profile_pic))
+                                                    <img src="https://via.placeholder.com/400x400" data-demo-src="/images/user/profile_pic/{{ \Auth::user()->profile->profile_pic }}"
                                                         alt="">
                                                     <span class="indicator"></span>
                                                     @else
@@ -489,7 +473,7 @@
                                                 </div>
                                             </div>
                                             <div class="media-content">
-                                                <h3>{{ Auth::guard('pet_owner')->user()->first_name }}</h3>
+                                                <h3>{{ \Auth::user()->first_name }}</h3>
                                                 <small>Main account</small>
                                             </div>
                                             <div class="media-right">
@@ -497,7 +481,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a id="profile-link" href="/edit-profile" class="account-item">
+                                    <a id="profile-link" href="{{route('show.edit_profile')}}" class="account-item">
                                         <div class="media">
                                             <div class="icon-wrap">
                                                 <i data-feather="check"></i>
@@ -522,51 +506,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            @elseif (Auth::guard('funder')->check())
-                                <div class="nav-drop-body account-items">
-                                    <a id="profile-link" href="/profile" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="https://via.placeholder.com/400x400"
-                                                        data-demo-src="/assets/img/demo/groups/1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>{{ Auth::guard('funder')->user()->first_name }}</h3>
-                                                <small>Main account</small>
-                                            </div>
-                                            <div class="media-right">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a id="profile-link" href="/edit-profile" class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Edit Account</h3>
-                                                <small>Update your profile.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <hr class="account-divider">
-
-                                    <a class="account-item" id="profile-link" href="/logout">
-                                        <div class="media" >
-                                            <div class="icon-wrap">
-                                                <i data-feather="power"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Log out</h3>
-                                                <small>Log out from your account.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            @else
+                           @else
                                 <div class="nav-drop-body account-items">
                                 <a id="profile-link" href="{{route('show.login')}}" class="account-item">
                                     <div class="media">

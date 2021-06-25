@@ -2,8 +2,8 @@
 @section('content')
 
     <!-- Pageloader -->
-    <div class="pageloader"></div>
-    <div class="infraloader is-active"></div>
+{{--    <div class="pageloader"></div>--}}
+{{--    <div class="infraloader is-active"></div>--}}
     <div class="app-overlay"></div>
 
     <div class="view-wrapper is-full">
@@ -13,9 +13,9 @@
 
             <!--Cover image-->
             <div class="profile-cover">
-                @if ($user->cover_pic)
+                @if ($user->profile->cover_pic)
                 <img class="cover-image" src="https://via.placeholder.com/1600x460"
-                data-demo-src="/images/user/cover_pic/{{ $user->cover_pic }}" alt="">
+                data-demo-src="/images/user/cover_pic/{{ $user->profile->cover_pic }}" alt="">
                 @endif
 
             </div>
@@ -24,9 +24,9 @@
             <div class="profile-info">
                 <div class="left">
                     <div class="profile-avatar">
-                        @if ($user->profile_pic)
+                        @if ($user->profile->profile_pic)
                         <img id="user-avatar-minimal" src="https://via.placeholder.com/300x300"
-                            data-demo-src="/images/user/profile_pic/{{ $user->profile_pic }}" alt="">
+                            data-demo-src="/images/user/profile_pic/{{ $user->profile->profile_pic }}" alt="">
                         @endif
                     </div>
                     {{-- <a class="button is-fullwidth modal-trigger" data-modal="change-cover-modal">
@@ -48,7 +48,7 @@
                         <span>104 Following</span>
                     </div>
                     <div class="bio">
-                        <p>{{$user->bio}}</p>
+                        <p>{{$user->profile->bio}}</p>
                     </div>
                 </div>
             </div>

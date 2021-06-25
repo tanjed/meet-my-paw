@@ -5,10 +5,7 @@
     <div class="pageloader"></div>
     <div class="infraloader is-active"></div>
     <div class="app-overlay"></div>
-    <div id="shadow-dom" class="view-wrap p-5">
-        <div class="row">
-
-        </div>
+    <div id="shadow-dom" class="view-wrap p-5" style="margin-top: 100px">
         <div id="general-settings" class="settings-section is-active">
             <div class="settings-panel">
                 <div class="settings-form-wrapper">

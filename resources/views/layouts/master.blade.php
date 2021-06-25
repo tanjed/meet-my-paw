@@ -13,7 +13,7 @@
         @yield('content')
     @else
         @include('includes.navbar')
-        <div>
+        <div class="mt-5">
             @yield('content')
         </div>
     @endif

@@ -28,30 +28,16 @@ class LoginController extends Controller
             'email'   => 'required|email',
             'password' => 'required|min:6'
         ]);
-        if ($request['login_as'] == 'pet_owner') {
-            if (Auth::guard('pet_owner')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
-
-                return redirect()->to('/');
-            } else {
-                return back()->withInput($request->only('email', 'remember'))->with('failed', 'Login Error, Use Valid Credentials!');
-            }
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+            return redirect()->to('/');
         } else {
-            if (Auth::guard('funder')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
-
-                return redirect()->to('/');
-            } else {
-                return back()->withInput($request->only('email', 'remember'))->with('failed', 'Login Error, Use Valid Credentials!');
-            }
+            return back()->withInput($request->only('email', 'remember'))->with('failed', 'Login Error, Use Valid Credentials!');
         }
     }
 
     public function logout(Request $request)
     {
-        if (Auth::guard('pet_owner')->check()) {
-            Auth::guard('pet_owner')->logout();
-        } elseif (Auth::guard('funder')->check()) {
-            Auth::guard('funder')->logout();
-        }
+       \Illuminate\Support\Facades\Auth::logout();
 
         return redirect()->to('/login');
     }
