@@ -11,7 +11,7 @@
         </a>
     </div>
 
-    <div class="process-bar-wrap d-none">
+    <div class="process-bar-wrap" style="display: none">
         <div class="process-bar">
             <div class="progress-wrap">
                 <div class="track"></div>

@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <div class="view-wrapper">
+
 
         <!-- Container -->
         <div id="posts-feed" class="container">
@@ -779,7 +779,7 @@
             </div>
 
         </div>
-    </div>
+
 
     <div class="chat-wrapper">
         <div class="chat-inner">

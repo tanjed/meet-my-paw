@@ -6,7 +6,7 @@
 {{--    <div class="infraloader is-active"></div>--}}
     <div class="app-overlay"></div>
 
-    <div class="view-wrapper is-full">
+
 
         <!--Wrapper-->
         <div class="minimal-profile-wrapper">
@@ -1796,7 +1796,7 @@
 
             </div>
         </div>
-    </div>
+
 
     <div class="chat-wrapper">
         <div class="chat-inner">

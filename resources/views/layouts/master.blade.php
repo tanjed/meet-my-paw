@@ -13,7 +13,7 @@
         @yield('content')
     @else
         @include('includes.navbar')
-        <div class="mt-5">
+        <div class="view-wrapper is-full">
             @yield('content')
         </div>
     @endif
@@ -46,5 +46,5 @@
     <script src="{{ \Illuminate\Support\Facades\URL::to('assets/js/popovers-users.js') }}"></script>
     <script src="{{ \Illuminate\Support\Facades\URL::to('assets/js/popovers-pages.js') }}"></script>
     <script src="{{ \Illuminate\Support\Facades\URL::to('assets/js/lightbox.js') }}"></script>
-    <script src="/assets/js/signup.js"></script>
+    <script src="{{\Illuminate\Support\Facades\URL::to('assets/js/signup.js')}}"></script>
 </body>
