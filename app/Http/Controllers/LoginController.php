@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\Auth as FacadesAuth;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -28,24 +29,19 @@ class LoginController extends Controller
             'email'   => 'required|email',
             'password' => 'required|min:6'
         ]);
-        switch ($request->login_as){
-            case 'pet_seekers' :
-                $guard = 'pet_seekers';
-                break;
-            default :
-                $guard = 'pet_owners';
-                break;
-        }
+        $guard = detectGuard($request->login_as);
         if (Auth::guard($guard)->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+            Session::put('guard',$guard);
             return redirect()->to('/');
         } else {
             return back()->withInput($request->only('email', 'remember'))->with('failed', 'Invalid email or password.');
         }
     }
 
-    public function logout(Request $request)
+    public function logout($guard,Request $request)
     {
-       \Illuminate\Support\Facades\Auth::logout();
+        $guard = detectGuard($guard);
+       \Illuminate\Support\Facades\Auth::guard($guard)->logout();
 
         return redirect()->to('/login');
     }

@@ -32,17 +32,18 @@ class RegisterController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         } else {
-            $user_name = $request->first_name . '~' . strtotime(Carbon::now()->format('h:i:s')) . rand(0, 9);
-            $user = User::create([
-                'first_name' => $request->first_name,
-                'last_name' => $request->last_name,
-                'user_name' => $user_name,
-                'type' => $request->type == 'pet_owner' ? "PET_OWNER" : "FUNDER",
-                'email' => $request->email,
-                'password' => Hash::make($request->password),
+            $user = getUserModelFromGuard($request->type);
+            $user->first_name = $request->first_name;
+            $user->last_name = $request->last_name;
+            $user->user_name = generateUserName($request->first_name);
+            $user->email = $request->email;
+            $user->password = Hash::make($request->password);
+            $user->profile->create([
+                'user_id' => $user->id,
+                'profile_pic' => '',
+                'cover_pic' => ''
             ]);
-            UserProfile::create(['user_id' => $user->id]);
-            Auth::login($user);
+            Auth::guard(detectGuard($request->type))->login($user);
             return redirect('/');
         }
     }

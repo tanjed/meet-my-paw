@@ -77,7 +77,7 @@
 
                                 <h3>Pet Seeker</h3>
                                 <p>Create a Funder account to be able to do some awesome things.</p>
-                                <a class="button is-fullwidth process-button type-select" data-step="step-dot-2" data-value="funder">
+                                <a class="button is-fullwidth process-button type-select" data-step="step-dot-2" data-value="pet_seeker">
                                     Continue
                                 </a>
                             </div>
