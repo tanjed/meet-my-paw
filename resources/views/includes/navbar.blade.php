@@ -40,11 +40,11 @@
                     {{--            </a>--}}
                     {{--        </div>--}}
 
-                    <div id="open-mobile-search" class="navbar-item is-icon">
-                        <a class="icon-link is-primary" href="javascript:void(0);">
-                            <i data-feather="search"></i>
-                        </a>
-                    </div>
+{{--                    <div id="open-mobile-search" class="navbar-item is-icon">--}}
+{{--                        <a class="icon-link is-primary" href="javascript:void(0);">--}}
+{{--                            <i data-feather="search"></i>--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
                 @endif
             </div>
 
@@ -219,7 +219,7 @@
         <div class="navbar-item has-dropdown is-active">
             @if(\Illuminate\Support\Facades\Auth::check())
                 <a href="{{route('show.profile',Auth::user()->user_name)}}" class="navbar-link">
-                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/{{Auth::user()->profile->profile_pic}}" alt="">
+                    <img src="/images/user/profile_pic/{{Auth::user()->profile->profile_pic}}" alt="">
                     <span class="is-heading">{{Auth::user()->first_name}}</span>
                 </a>
             @endif

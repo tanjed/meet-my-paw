@@ -8,6 +8,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        dd(1);
+        return view('pet_owner_dashboard.index');
     }
 }
