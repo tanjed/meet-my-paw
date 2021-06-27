@@ -28,10 +28,18 @@ class LoginController extends Controller
             'email'   => 'required|email',
             'password' => 'required|min:6'
         ]);
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+        switch ($request->login_as){
+            case 'pet_seekers' :
+                $guard = 'pet_seekers';
+                break;
+            default :
+                $guard = 'pet_owners';
+                break;
+        }
+        if (Auth::guard($guard)->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
             return redirect()->to('/');
         } else {
-            return back()->withInput($request->only('email', 'remember'))->with('failed', 'Login Error, Use Valid Credentials!');
+            return back()->withInput($request->only('email', 'remember'))->with('failed', 'Invalid email or password.');
         }
     }
 

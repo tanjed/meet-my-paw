@@ -75,7 +75,7 @@
                                     <img class="type-bg dark-image" src="assets/img/illustrations/signup/type-3-bg-dark.svg" alt="">
                                 </div>
 
-                                <h3>Funder</h3>
+                                <h3>Pet Seeker</h3>
                                 <p>Create a Funder account to be able to do some awesome things.</p>
                                 <a class="button is-fullwidth process-button type-select" data-step="step-dot-2" data-value="funder">
                                     Continue
@@ -167,7 +167,7 @@
                     <div class="form-panel">
                         <img class="success-image" src="assets/img/illustrations/signup/mailbox.svg" alt="">
                         <div class="success-text">
-                            <h3>Congratz, you successfully created your account.</h3>
+                            <h3>Congratulations! Your account has been successfully created.</h3>
                             <button type="submit" id="signup-finish" class="button is-fullwidth">Let Me In</button>
                         </div>
                     </div>

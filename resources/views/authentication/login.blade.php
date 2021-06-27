@@ -99,7 +99,7 @@
                                     <a class="nav-link active" href="#" data-value="pet_owner">Pet Owner</a>
                                 </li>
                                 <li class="nav-item" style="width: 50% !important;">
-                                    <a class="nav-link" href="#" data-value="fonder">Fonder</a>
+                                    <a class="nav-link" href="#" data-value="pet_seeker">Pet Seeker</a>
                                 </li>
                             </ul>
 {{--                            <ul class="nav nav-tabs justify-content-center">--}}

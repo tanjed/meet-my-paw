@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserProfile extends Model
+class PetSeekerProfile extends Model
 {
-    protected $guarded = ['id'];
+    //
 }

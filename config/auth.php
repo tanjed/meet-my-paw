@@ -36,24 +36,24 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-        'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
-            'hash' => false,
-        ],
+//        'web' => [
+//            'driver' => 'session',
+//            'provider' => 'users',
+//        ],
+//        'api' => [
+//            'driver' => 'token',
+//            'provider' => 'users',
+//            'hash' => false,
+//        ],
 
         'pet_owner' => [
             'driver' => 'session',
             'provider' => 'pet_owners',
         ],
 
-        'funder' => [
+        'pet_seekers' => [
             'driver' => 'session',
-            'provider' => 'funders',
+            'provider' => 'pet_seekers',
         ],
     ],
 
@@ -75,17 +75,17 @@ return [
     */
 
     'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\User::class,
-        ],
+//        'users' => [
+//            'driver' => 'eloquent',
+//            'model' => App\User::class,
+//        ],
         'pet_owners' => [
             'driver' => 'eloquent',
             'model' => App\PetOwner::class,
         ],
-        'funders' => [
+        'pet_seekers' => [
             'driver' => 'eloquent',
-            'model' => App\Funder::class,
+            'model' => App\PetSeeker::class,
         ],
         // 'users' => [
         //     'driver' => 'database',
