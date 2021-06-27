@@ -7,6 +7,54 @@
         .nav-link{
             border-color: #dee2e6 !important;
         }
+        .tabs {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .tabs li {
+            /*margin: 0 2px;*/
+            /*padding: 10px;*/
+            cursor: pointer;
+            background: white;
+            display: inline-block;
+        }
+        .tabs li:not(.active):hover
+        {
+            background: #ccc;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+        .tabs li > a
+        {
+            text-decoration: none;
+            color: gray
+        }
+        .tabs li.active
+        {
+            z-index: 1000;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            border: 1px solid #ccc;
+            border-bottom-color: #fff;
+            color: grey;
+            cursor: default;
+        }
+        .tabs:after
+        {
+            position: absolute;
+            content: "";
+            width: 100%;
+            z-index: 1;
+            bottom: 0;
+            left:0;
+            border-bottom: 1px solid #ddd;
+        }
+        .tabs:before
+        {
+            z-index: 1;
+        }
     </style>
     <!-- Main Wrapper -->
     <div class="login-wrapper columns is-gapless">
@@ -46,14 +94,22 @@
                         <form method="POST"  action="{{ route('post.login') }}">
                             @csrf
                             <center><label>Login As:</label></center>
-                            <ul class="nav nav-tabs justify-content-center">
-                                <li class="nav-item">
+                            <ul class="tabs">
+                                <li class="nav-item" style="width: 50% !important;">
                                     <a class="nav-link active" href="#" data-value="pet_owner">Pet Owner</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" style="width: 50% !important;">
                                     <a class="nav-link" href="#" data-value="fonder">Fonder</a>
                                 </li>
                             </ul>
+{{--                            <ul class="nav nav-tabs justify-content-center">--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link active" href="#" data-value="pet_owner">Pet Owner</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link" href="#" data-value="fonder">Fonder</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
                             <br>
                             <div class="login-form">
                                 <div class="field">
@@ -101,7 +157,8 @@
 </div>
     <script>
         $('.nav-link').click(function () {
-            $('.nav-link').toggleClass('active')
+            $('.nav-link').removeClass('active')
+            $(this).addClass('active')
             $("input[name='login_as']").val($(this).data('value'))
         });
         (function (){

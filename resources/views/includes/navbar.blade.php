@@ -872,10 +872,12 @@
     <div class="navbar-menu">
         <!-- Account -->
         <div class="navbar-item has-dropdown is-active">
-            <a href="navbar-v1-profile-main.html" class="navbar-link">
-                <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" alt="">
-                <span class="is-heading">Jenna Davis</span>
-            </a>
+            @if(\Illuminate\Support\Facades\Auth::check())
+                <a href="{{route('show.profile',Auth::user()->user_name)}}" class="navbar-link">
+                    <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/{{Auth::user()->profile->profile_pic}}" alt="">
+                    <span class="is-heading">{{Auth::user()->first_name}}</span>
+                </a>
+            @endif
 
             <!-- Mobile Dropdown -->
             <div class="navbar-dropdown">
@@ -906,11 +908,6 @@
 
         <!-- More -->
         <div class="navbar-item has-dropdown">
-            <a href="navbar-v1-settings.html" class="navbar-link">
-                <i data-feather="user"></i>
-                <span class="is-heading">Account</span>
-            </a>
-
             <!-- Mobile Dropdown -->
             <div class="navbar-dropdown">
                 <a href="#" class="navbar-item is-flex is-mobile-icon">
@@ -919,9 +916,16 @@
                 <a href="navbar-v1-settings.html" class="navbar-item is-flex is-mobile-icon">
                     <span><i data-feather="settings"></i>Settings</span>
                 </a>
-                <a href="#" class="navbar-item is-flex is-mobile-icon">
-                    <span><i data-feather="log-out"></i>Logout</span>
-                </a>
+                @if(Auth::check())
+                    <a href="{{route('logout')}}" class="navbar-item is-flex is-mobile-icon">
+                        <span><i data-feather="log-out"></i>Logout</span>
+                    </a>
+                @else
+                    <a href="{{route('show.login')}}" class="navbar-link">
+                        <i data-feather="user"></i>
+                        <span class="is-heading">Login</span>
+                    </a>
+                @endif
             </div>
         </div>
     </div>
