@@ -13,20 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('news_feed.news_feed');
-// });
-
-// Route::get('/login',function (){
-//     return view('authentication.login');
-// })->name('show.login');
-// Route::get('/registration',function (){
-//     return view('authentication.register');
-// })->name('show.register');
-
-// Route::get('/profile',function (){
-//     return view('profile.profile');
-// })->name('show.profile');
 
 Route::post('/register','RegisterController@createAuth')->name('post.register');
 Route::post('/login','LoginController@authLogin')->name('post.login');
@@ -34,8 +20,11 @@ Route::get('/logout','LoginController@logout')->name('logout');
 Route::get('/login','LoginController@loginView')->name('show.login');
 Route::get('/register','RegisterController@registerView')->name('show.register');
 //page routes
-Route::get('/','HomeController@index');
+Route::get('/','HomeController@index')->name('home');
 Route::get('/home','HomeController@index');
 Route::get('/profile/{user_name}','HomeController@profile')->name('show.profile');
 Route::get('/edit-profile','HomeController@editProfile')->name('show.edit_profile');
 Route::post('/update-profile/{id}','HomeController@updateProfile')->name('update.profile');
+
+
+Route::get('/dashboard','DashboardController@index')->name('show.dashboard');

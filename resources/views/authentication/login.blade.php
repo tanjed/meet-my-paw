@@ -84,10 +84,10 @@
                     <div class="form-wrapper">
                         <!--Avatar-->
                         <div class="avatar">
-                            <div class="badge">
-                                <i data-feather="check"></i>
-                            </div>
-                            <img src="https://placehold.it/128x128" data-demo-src="assets/img/avatars/jenna.png" alt="">
+{{--                            <div class="badge">--}}
+{{--                                <i data-feather="check"></i>--}}
+{{--                            </div>--}}
+                            <img src="{{asset('/assets/brand.png')}}" alt="">
                         </div>
                         @include('includes.message')
                         <!--Form-->
